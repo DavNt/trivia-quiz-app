@@ -34,7 +34,7 @@ export default function Qsettings(){
         setOpt(respons.trivia_categories);
         handleLoadingChange(false);
       });
-  }, [setOpt], dispatch);
+  }, [setOpt, dispatch]);
 
   const handleCategoryChange = event => {
     dispatch({

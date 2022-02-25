@@ -8,7 +8,7 @@ export default function FetchBtn(props){
   const questionDifficulty = useSelector(state => state.options.question_difficulty)
   const questionType = useSelector(state => state.options.question_type)
   const questionAmount = useSelector(state => state.options.amount_of_questions)
-  const questionIndex = useSelector(state => state.index)
+  // const questionIndex = useSelector(state => state.index)
 
   const dispatch = useDispatch();
 

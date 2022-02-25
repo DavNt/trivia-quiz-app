@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import FetchBtn from "./fetchbtn";
+// import FetchBtn from "./fetchbtn";
 import Winstcker from '../resources/icons/undraw_winners_ao2o.svg';
 
 export default function FinalScreen(){
