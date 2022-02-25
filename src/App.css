@@ -1,38 +1,124 @@
+html, body{
+  background: url(./resources/icons/background.png) no-repeat center;
+  /* Full height */
+  height: 100%;
+}
 .App {
-  text-align: center;
+  /* overflow: hidden; */
+  /* display: flex; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+li:hover {
+  background-color: #fcaa27;
   color: white;
+  border: none;
+}
+li.correct {
+  background-color: #60BF88;
+  border-color: #60BF88;
+}
+li.selected:not(correct) {
+  background-color: #EA8282;
+  border-color: #EA8282;
+}
+.btn-colour{
+  background-color: #F9A826;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 90px;
+}
+.scorcolor{
+  color: #ffb237;
+}
+.putcenter{
+  display: flex;
+  justify-content: center;
+}
+.listthings{
+  border: 2px solid #6066D0;
+  border-radius: 10px;
+  list-style-position: inside;
+  padding: 15px;
+  margin: 8px;
+}
+.centerqtns{
+  display: flex;
+  justify-content: center;
+}
+.qtnbox, .centercon{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  /* width: 600px; */
+}
+.qtnbox-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: -40px;
+  z-index: 5;
+  color: #ffffff;
+}
+.heading{
+  color: #ffffff;
+}
+.innerqbox{
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  /* margin-top: 70px; */
+}
+.finbtns{
+  border: 2px solid #1D355D;
+  border-radius: 10px;
+  margin: 8px;
+  background-color: transparent;
+  color: #1D355D;
+  width: 120px;
+  height: 60px;
+}
+.finbtns:hover{
+  background-color: #F9A826;
+  border: none;
+}
+.centercon{
+  color: #1D355D;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .qtnbox, .centercon{
+    width: 320px;
   }
-  to {
-    transform: rotate(360deg);
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .qtnbox, .centercon{
+    width: 400px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .qtnbox, .centercon{
+    width: 600px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .qtnbox, .centercon{
+    width: 600px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .qtnbox, .centercon{
+    width: 700px;
   }
 }
